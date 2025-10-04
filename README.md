@@ -87,12 +87,21 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
-5. Run the development server:
+5. (Optional) Create sample data for testing:
+```bash
+python manage.py create_sample_data
+```
+
+This will create:
+- 2 sample companies
+- 4 sample users with different roles
+- 3 sample tickets
+
 ```bash
 python manage.py runserver
 ```
 
-6. Access the admin interface at `http://127.0.0.1:8000/admin/`
+7. Access the admin interface at `http://127.0.0.1:8000/admin/`
 
 ## Usage
 
